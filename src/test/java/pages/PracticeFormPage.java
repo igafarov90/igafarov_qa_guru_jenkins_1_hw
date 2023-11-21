@@ -1,16 +1,16 @@
 package pages;
 
 import com.codeborne.selenide.SelenideElement;
-import pages.widgets.DatePicker;
-import pages.widgets.Table;
+import pages.components.DatePickerComponent;
+import pages.components.ModalWindowComponent;
 
 import static com.codeborne.selenide.Condition.*;
 import static com.codeborne.selenide.Selectors.byText;
 import static com.codeborne.selenide.Selenide.*;
 
 public class PracticeFormPage {
-    DatePicker datePicker = new DatePicker();
-    Table table = new Table();
+    DatePickerComponent datePickerComponent = new DatePickerComponent();
+    ModalWindowComponent modalWindowComponent = new ModalWindowComponent();
     private final SelenideElement firstNameInput = $("#firstName"),
             lastNameInput = $("#lastName"),
             userEmailInput = $("#userEmail"),
@@ -81,7 +81,7 @@ public class PracticeFormPage {
 
     public PracticeFormPage setDateOfBirth(String year, String month, int day) {
         datePickerInput.click();
-        datePicker.setDate(year, month, day);
+        datePickerComponent.setDateOfBirth(year, month, day);
         return this;
     }
 
@@ -140,7 +140,7 @@ public class PracticeFormPage {
     }
 
     public PracticeFormPage checkTableResult(String key, String value) {
-        table.checkTable(key, value);
+        modalWindowComponent.checkTable(key, value);
 
         return this;
     }

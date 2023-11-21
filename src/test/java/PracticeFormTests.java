@@ -20,7 +20,7 @@ public class PracticeFormTests extends TestBase {
                 .setDateOfBirth(testData.year, testData.month, testData.date)
                 .setSubjects(testData.subjects)
                 .setHobbies(testData.userHobbies)
-                .uploadPicture("test.jpg")
+                .uploadPicture(testData.picture)
                 .setCurrentAddress(testData.userAddress)
                 .setState(testData.state)
                 .setCity(testData.city)

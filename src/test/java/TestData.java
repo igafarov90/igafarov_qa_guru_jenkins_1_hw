@@ -8,7 +8,7 @@ public class TestData {
             lastName = faker.name().lastName(),
             userEmail = faker.internet().emailAddress("com"),
             userGender = faker.options().option("Male", "Other", "Female"),
-            userMobile = faker.number().digits(10),
+            userMobile = faker.phoneNumber().subscriberNumber(10),
             userHobbies = faker.options().option("Sports", "Reading", "Music"),
             month = faker.options().option("January", "February", "March", "April",
                     "May", "June", "July", "August",
@@ -20,7 +20,8 @@ public class TestData {
             state = faker.options().option("NCR", "Uttar Pradesh", "Haryana", "Rajasthan"),
             city = setCity(state),
             secondHobby = setSecondHobby(userHobbies),
-            inputBorderColorError = "rgb(220, 53, 69)";
+            inputBorderColorError = "rgb(220, 53, 69)",
+            picture = "test.jpg";
     int date = faker.number().numberBetween(0, 28);
 
     public String setCity(String state) {
