@@ -34,7 +34,7 @@ public class PracticeFormTests extends TestBase {
                 .checkTableResult("Date of Birth", testData.date + " " + testData.month + "," + testData.year)
                 .checkTableResult("Subjects", testData.subjects)
                 .checkTableResult("Hobbies", testData.userHobbies)
-                .checkTableResult("Picture", "test.jpg")
+                .checkTableResult("Picture", testData.picture)
                 .checkTableResult("Address", testData.userAddress)
                 .checkTableResult("State and City", testData.state + " " + testData.city);
     }
