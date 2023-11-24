@@ -22,7 +22,7 @@ public class TestData {
             secondHobby = setSecondHobby(userHobbies),
             inputBorderColorError = "rgb(220, 53, 69)",
             picture = "test.jpg";
-    int date = faker.number().numberBetween(0, 28);
+    int date = faker.number().numberBetween(1, 28);
 
     public String setCity(String state) {
         switch (state) {
