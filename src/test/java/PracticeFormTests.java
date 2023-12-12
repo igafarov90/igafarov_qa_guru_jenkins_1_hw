@@ -93,14 +93,14 @@ public class PracticeFormTests extends TestBase {
     })
     void fillMobileNumberByInvalidData(String value) {
         step("Открыть форму регистрации", () -> {
-        practiceFormPage.openPage();
+            practiceFormPage.openPage();
         });
-            step("Ввести " + value +" поле Телефон и нажать submit", () -> {
-                practiceFormPage.setUserNumber(value)
-                .pressSubmit();
-            });
+        step("Ввести " + value + " поле Телефон и нажать submit", () -> {
+            practiceFormPage.setUserNumber(value)
+                    .pressSubmit();
+        });
         step("Проверка изменения цвета границ поля", () -> {
-        practiceFormPage.checkBorderColorUserNumberInput("border-color", testData.inputBorderColorError);
+            practiceFormPage.checkBorderColorUserNumberInput("border-color", testData.inputBorderColorError);
         });
     }
 
@@ -112,14 +112,14 @@ public class PracticeFormTests extends TestBase {
     @NullAndEmptySource
     void fillMobileNumberByNullAndEmpty(String value) {
         step("Открыть форму регистрации", () -> {
-        practiceFormPage.openPage();
+            practiceFormPage.openPage();
         });
-            step("Ввести " + value +" поле Телефон и нажать submit", () -> {
-                practiceFormPage.setUserNumber(value)
-                .pressSubmit();
-            });
+        step("Ввести " + value + " поле Телефон и нажать submit", () -> {
+            practiceFormPage.setUserNumber(value)
+                    .pressSubmit();
+        });
         step("Проверка изменения цвета границ поля", () -> {
-        practiceFormPage.checkBorderColorUserNumberInput("border-color", testData.inputBorderColorError);
+            practiceFormPage.checkBorderColorUserNumberInput("border-color", testData.inputBorderColorError);
         });
     }
 }

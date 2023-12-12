@@ -4,6 +4,8 @@ import com.codeborne.selenide.SelenideElement;
 import pages.components.DatePickerComponent;
 import pages.components.ModalWindowComponent;
 
+import java.time.Duration;
+
 import static com.codeborne.selenide.Condition.*;
 import static com.codeborne.selenide.Selectors.byText;
 import static com.codeborne.selenide.Selenide.*;
@@ -133,7 +135,7 @@ public class PracticeFormPage {
     }
 
     public PracticeFormPage checkModalWindowHeader(String value) {
-        modalWindow.should(appear);
+        modalWindow.shouldBe(visible, Duration.ofSeconds(10));
         modalHeader.shouldHave(text(value));
 
         return this;
