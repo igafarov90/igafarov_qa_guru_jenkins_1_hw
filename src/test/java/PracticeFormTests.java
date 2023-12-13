@@ -87,7 +87,7 @@ public class PracticeFormTests extends TestBase {
     @DisplayName("Заполнение поля Телефон вводом невалидных данных")
     @ParameterizedTest()
     @ValueSource(strings = {
-            "",
+            " ",
             "десятьбукв",
             "111111111"
     })
