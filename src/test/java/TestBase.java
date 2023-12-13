@@ -13,9 +13,8 @@ public class TestBase {
 
     @BeforeAll
     static void beforeAll() {
-
-        Configuration.browserSize = "1920x1080";
         Configuration.baseUrl = "https://demoqa.com";
+        Configuration.browserSize = "1920x1080";
         Configuration.pageLoadStrategy = "eager";
         Configuration.remote = "https://user1:1234@selenoid.autotests.cloud/wd/hub";
         SelenideLogger.addListener("allure", new AllureSelenide());
@@ -29,10 +28,10 @@ public class TestBase {
 
     @AfterEach
     protected void afterEach(){
-        Selenide.closeWebDriver();
         Attach.screenshotAs("Last screenshot");
         Attach.pageSource();
         Attach.browserConsoleLogs();
         Attach.addVideo();
+        Selenide.closeWebDriver();
     }
 }
