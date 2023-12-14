@@ -15,7 +15,7 @@ public class PracticeFormTests extends TestBase {
     TestData testData = new TestData();
     PracticeFormPage practiceFormPage = new PracticeFormPage();
 
-    @Tag("practice_form")
+    @Tag("positive")
     @Owner("igafarov")
     @Severity(SeverityLevel.CRITICAL)
     @DisplayName("Успешное заполнения формы регистрации, все поля")
@@ -55,7 +55,8 @@ public class PracticeFormTests extends TestBase {
         });
     }
 
-    @Tag("practice_form")
+    @Tag("smoke")
+    @Tag("positive")
     @Owner("igafarov")
     @Severity(SeverityLevel.CRITICAL)
     @DisplayName("Успешное заполнения формы регистрации, только обязательные поля")
@@ -81,7 +82,7 @@ public class PracticeFormTests extends TestBase {
         });
     }
 
-    @Tag("practice_form")
+    @Tag("negative")
     @Owner("igafarov")
     @Severity(SeverityLevel.MINOR)
     @DisplayName("Заполнение поля Телефон вводом невалидных данных")
@@ -104,7 +105,7 @@ public class PracticeFormTests extends TestBase {
         });
     }
 
-    @Tag("practice_form")
+    @Tag("negative")
     @Owner("igafarov")
     @Severity(SeverityLevel.MINOR)
     @DisplayName("Заполнение поля Телефон ввод нулла и пустого значения ")
