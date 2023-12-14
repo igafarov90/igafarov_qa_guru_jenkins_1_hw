@@ -24,7 +24,8 @@ public class TestBase {
                 "enableVideo", true
         ));
         Configuration.browserCapabilities = capabilities;
-    }
+        //check it
+            }
 
     @AfterEach
     protected void afterEach(){
