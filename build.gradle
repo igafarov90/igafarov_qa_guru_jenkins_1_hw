@@ -55,16 +55,16 @@ task negative_test(type: Test) {
     useJUnitPlatform {
         includeTags("negative")
     }
+}
 
-    task positive_test(type: Test) {
-        useJUnitPlatform {
-            includeTags("positive")
-        }
+task positive_test(type: Test) {
+    useJUnitPlatform {
+        includeTags("positive")
     }
+}
 
-    task smoke_test(type: Test) {
-        useJUnitPlatform {
-            includeTags("smoke")
-        }
+task smoke_test(type: Test) {
+    useJUnitPlatform {
+        includeTags("smoke")
     }
 }
