@@ -6,7 +6,7 @@
     "reportLink": "https://jenkins.autotests.cloud/job/jenkins_task_with_params_igafarov_qa_guru/",
     "language": "en",
     "messenger": "telegram",
-    "allureFolder": "build/allure-report/",
+    "allureFolder": "C:\\Users\\igafarov\\AppData\\Local\\Temp\\11641778494906986498\\allure-report",
     "enableChart": true
   },
   "telegram": {
