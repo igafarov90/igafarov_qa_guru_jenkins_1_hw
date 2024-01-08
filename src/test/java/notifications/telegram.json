@@ -1,0 +1,17 @@
+{
+  "base": {
+    "project": "some project",
+    "environment": "some env",
+    "comment": "some comment",
+    "reportLink": "https://jenkins.autotests.cloud/job/jenkins_task_with_params_igafarov_qa_guru/",
+    "language": "en",
+    "messenger": "telegram",
+    "allureFolder": "build/allure-report/",
+    "enableChart": true
+  },
+  "telegram": {
+    "token": "6981579845:AAFI5Sch3etaEF3rO3sd5IEte837z19hGHI",
+    "chat": "-1001953653365",
+    "replyTo": ""
+  }
+}
